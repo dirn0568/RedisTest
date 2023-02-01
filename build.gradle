@@ -25,14 +25,8 @@ dependencies {
     runtimeOnly 'com.h2database:h2'
     annotationProcessor 'org.projectlombok:lombok'
 
-    // Web Socket (채팅)
-    implementation 'org.springframework.boot:spring-boot-starter-websocket'
-    implementation 'org.webjars:stomp-websocket:2.3.3-1'
-    implementation 'org.webjars:sockjs-client:1.1.2'
-
-    // ElasticCache redis
-    implementation("org.springframework.boot:spring-boot-starter-data-redis")
-
+    // redis
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
     // embedded-redis
     implementation group: 'it.ozimov', name: 'embedded-redis', version: '0.7.2'
 }
